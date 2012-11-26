@@ -1,0 +1,26 @@
+RTextTools: Automatic Text Classification via Supervised Learning
+
+Description:	RTextTools is a machine learning package for automatic text classification that makes it simple for novice users to get started with machine learning, while allowing experienced users to easily experiment with different settings and algorithm combinations. The package includes nine algorithms for ensemble classification (svm, slda, boosting, bagging, random forests, glmnet, decision trees, neural networks, maximum entropy), comprehensive analytics, and thorough documentation.
+Version:		1.4.0
+Depends:		R (≥ 2.15.0), methods, SparseM, randomForest, tree, nnet, tm, e1071, ipred, caTools, maxent, glmnet, tau
+Published:		2012-09-22
+Authors:		Timothy P. Jurka, Loren Collingwood, Amber E. Boydstun, Emiliano Grossman, Wouter van Atteveldt
+Maintainer:		Timothy P. Jurka <tpjurka at ucdavis.edu>
+License:		GPL-3
+URL:			http://www.rtexttools.com/
+
+
+INSTALLATION
+============
+RTextTools requires R 2.15+, which can be downloaded at http://www.r-project.org/. To build and install RTextTools, run the following commands while in the root folder:
+
+R CMD REMOVE RTextTools
+R CMD BUILD RTextTools
+R CMD INSTALL RTextTools_X.X.X.tar.gz (where the X's should be replaced with the version number -- e.g. 1.4.0)
+
+
+SOURCE CODE
+============
+To modify the R code, go to the RTextTools folder, and modify files within the R directory. After making changes, ensure the package passes R CHECK using the following command:
+
+R CMD CHECK RTextTools
